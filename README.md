@@ -28,6 +28,6 @@
 * La raíz cúbica del menor número
 Para el punto anterior incluir las funciones en un archivo independiente e importarlas para su uso.
 
-* Consultar qué es y cómo funciona pip en python.
+5. Consultar qué es y cómo funciona pip en python.
 
-* Hacer un listado de módulos populares para python que se puedan instalar com pip y consultar cómo instalarlos.
+6. Hacer un listado de módulos populares para python que se puedan instalar com pip y consultar cómo instalarlos.
