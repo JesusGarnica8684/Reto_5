@@ -8,7 +8,7 @@
 * Cree dos funciones en python para calcular los valores antes establecidos, al ingresar por teclado r1, r2 y h.
 * Revise como utilizar el valor de pi usando import math y math.pi
 
-python´´´
+´´´ python 
 from math import pi, sqrt #se trae de la libreria math especificamente los dos modulos que serán útiles
 
 def calcular_solidos(r1:float, r2:float, h:float) -> float:
