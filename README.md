@@ -8,6 +8,34 @@
 * Cree dos funciones en python para calcular los valores antes establecidos, al ingresar por teclado r1, r2 y h.
 * Revise como utilizar el valor de pi usando import math y math.pi
 
+python´´´
+from math import pi, sqrt #se trae de la libreria math especificamente los dos modulos que serán útiles
+
+def calcular_solidos(r1:float, r2:float, h:float) -> float:
+    areaEsfera = 4*pi*(r1**2)
+    volumenEsfera = 4/3*pi*(r1**2)
+    gCono = sqrt((r2**2)+(h**2)) #para el calculo de la superficie del cono se necesita la generatriz del cono, 
+    #para esto tomando la generatriz como la hipotenusa se calcula la raiz de la suma de los cuadrados del radio del cono con la altura del cono
+    areaCono = pi*r2*(r2+gCono)
+    volumenCono = 1/3*pi*(r2**2)*h 
+    return areaCono, volumenCono, volumenEsfera, areaEsfera
+
+def ingreso_teclado(r1: float, r2: float, h: float) -> float:
+    #funcion para organizar los datos tras el ingreso por teclado en main
+    aCono, vCono, vEsfera, aEsfera = calcular_solidos(r1, r2, h)#se llama a la funcion para calcular las areas y volumenes
+    aTotal = aCono + aEsfera 
+    vTotal = vCono + vEsfera 
+    return aTotal, vTotal
+
+
+if __name__=="__main__":
+    radioE = float(input("Ingrese el radio de la esfera. "))
+    radioC = float(input("Ingrese el radio de la base del cono. "))
+    alturaC = float(input("Ingrese la altura del cono. "))
+    areaTotal, volumenTotal = ingreso_teclado(radioE, radioC, alturaC)
+    print("El area total de los sólidos es: ", areaTotal, "\nEl volumen total de los sólidos es: ", volumenTotal)
+
+´´´
 2. Dado la figura de la imagen, desarrolle:
 
 ![image](https://github.com/user-attachments/assets/69a02987-a896-4f0d-a435-02cfa2fd3460)
