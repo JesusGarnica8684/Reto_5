@@ -8,7 +8,7 @@
 * Cree dos funciones en python para calcular los valores antes establecidos, al ingresar por teclado r1, r2 y h.
 * Revise como utilizar el valor de pi usando import math y math.pi
 
-´´´ python 
+```python
 from math import pi, sqrt #se trae de la libreria math especificamente los dos modulos que serán útiles
 
 def calcular_solidos(r1:float, r2:float, h:float) -> float:
@@ -35,7 +35,7 @@ if __name__=="__main__":
     areaTotal, volumenTotal = ingreso_teclado(radioE, radioC, alturaC)
     print("El area total de los sólidos es: ", areaTotal, "\nEl volumen total de los sólidos es: ", volumenTotal)
 
-´´´
+```
 2. Dado la figura de la imagen, desarrolle:
 
 ![image](https://github.com/user-attachments/assets/69a02987-a896-4f0d-a435-02cfa2fd3460)
