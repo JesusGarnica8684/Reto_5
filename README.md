@@ -97,9 +97,75 @@ if __name__=="__main__":
 * La potencia del mayor número elevado al menor número
 * La raíz cúbica del menor número
 ```python
+# datos.py
+import math
+
+def promedio(n1: float, n2: float , n3: float, n4: float, n5: float) -> float:
+    prom = (n1 + n2 + n3 + n4 + n5) / 5
+    return prom
+
+def mediana(n1: float, n2: float , n3: float, n4: float, n5: float) -> float:
+    # se ordenan los numeros por medio de organizarlos de menor a mayor 
+    if n1 > n2:
+        n1, n2 = n2, n1 #cuando un numero desmuestre ser mayor que otro tomará su posicion
+    if n1 > n3:
+        n1, n3 = n3, n1
+    if n1 > n4:
+        n1, n4 = n4, n1
+    if n1 > n5:
+        n1, n5 = n5, n1
+    if n2 > n3:
+        n2, n3 = n3, n2
+    if n2 > n4:
+        n2, n4 = n4, n2
+    if n2 > n5:
+        n2, n5 = n5, n2
+    if n3 > n4:
+        n3, n4 = n4, n3
+    if n3 > n5:
+        n3, n5 = n5, n3
+    if n4 > n5:
+        n4, n5 = n5, n4
+    # La mediana será n3 siendo el numero del medio
+    return n3
+
+def promedio_multiplicativo(n1: float, n2: float , n3: float, n4: float, n5: float) -> float:
+    por = n1 * n2 * n3 * n4 * n5
+    # Calcular la raíz de la cantidad de numeros
+    prom_multi = math.pow(por, 1/5)
+    return prom_multi
+
+def potencia(n1: float, n2: float , n3: float, n4: float, n5: float) -> float:
+    mayor = max(n1, n2, n3, n4, n5)
+    menor = min(n1, n2, n3, n4, n5)
+    expo = mayor ** menor # Calcular la potencia del mayor elevado al menor
+    return expo
+
+def raiz_tres(n1: float, n2: float , n3: float, n4: float, n5: float) -> float:
+    menor = min(n1, n2, n3, n4, n5)
+    raiz_cubica = menor ** (1/3)
+    return raiz_cubica
 ```
 Para el punto anterior incluir las funciones en un archivo independiente e importarlas para su uso.
 ```python
+import datos 
+
+if __name__=="__main__":
+    numUn = float(input("Ingrese el primer numero a evaluar: "))
+    numDo = float(input("Ingrese el segundo numero a evaluar: "))
+    numTri = float(input("Ingrese el tercer numero a evaluar: "))
+    numTetra = float(input("Ingrese el cuarto numero a evaluar: "))
+    numPenta = float(input("Ingrese el quinto numero a evaluar: "))
+    prom = datos.promedio(numUn, numDo, numTri, numTetra, numPenta)
+    med = datos.mediana(numUn, numDo, numTri, numTetra, numPenta)
+    promPor = datos.promedio_multiplicativo(numUn, numDo, numTri, numTetra, numPenta)
+    expo = datos.potencia(numUn, numDo, numTri, numTetra, numPenta)
+    rTres = datos.raiz_tres(numUn, numDo, numTri, numTetra, numPenta)
+    print ("El promedio es: ", prom)
+    print ("La mediana es: ", med)
+    print ("El promedio multiplicativo es: ", promPor)
+    print ("La potencia del numero mayor al numero menor es: ", expo)
+    print ("La raíz cubica del menor numero es: ", rTres)
 ```
 
 6. Consultar qué es y cómo funciona pip en python.
