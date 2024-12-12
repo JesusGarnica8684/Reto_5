@@ -114,3 +114,12 @@ Para el punto anterior incluir las funciones en un archivo independiente e impor
     ```pip install nombre-paquete```
 
 7. Hacer un listado de módulos populares para python que se puedan instalar con pip y consultar cómo instalarlos.
+* Matplotlib
+* TensorFlow
+* PyTorch
+* Keras
+* Scikit-learn
+* Pandas
+* Seaborn
+* Bokeh
+* NumPy
