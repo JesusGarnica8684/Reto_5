@@ -71,7 +71,7 @@ if __name__=="__main__":
 
 3. Diseñe una función que calcule la cantidad de carne de aves en kilos si se tienen N gallinas, M gallos y K pollitos cada uno pesando 6 kilos, 7 kilos y 1 kilo respectivamente.
 ```python
-def cantidad_de_carne (N, M, K):
+def cantidad_de_carne (N: int, M: int, K: int) -> int:
     kg_gallinas = N * 6
     kg_gallos = M * 7 
     kg_pollitos = K * 1 
@@ -87,16 +87,29 @@ if __name__=="__main__":
     print ("Para un numero de ", nPollitos, " pollitos, hay una cantidad de carne de ", carPollito,"Kg")
 ```
 4. Haga un programa que utilice una función para calcular el valor de un préstamo C usando interés compuesto del i por n meses.
-
+```python
+```
 5. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones usando una función para cada una:
 
 * El promedio
+```python
+```
 * La mediana
+```python
+```
 * El promedio multiplicativo (multilplica todos y luego calcula la raíz de la cantidad de operandos)
+```
+```
 * La potencia del mayor número elevado al menor número
+```python
+```
 * La raíz cúbica del menor número
+```python
+```
 Para el punto anterior incluir las funciones en un archivo independiente e importarlas para su uso.
+```python
+```
 
 6. Consultar qué es y cómo funciona pip en python.
 
-7. Hacer un listado de módulos populares para python que se puedan instalar com pip y consultar cómo instalarlos.
+7. Hacer un listado de módulos populares para python que se puedan instalar con pip y consultar cómo instalarlos.
