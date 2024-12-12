@@ -88,6 +88,17 @@ if __name__=="__main__":
 ```
 4. Haga un programa que utilice una función para calcular el valor de un préstamo C usando interés compuesto del i por n meses.
 ```python
+def interes_compuesto (P: float, i: float, n: int) -> float: #funcion para calcular el interes compuesto
+    interes_mes = i / 100 / 12 # el interes i se convierte a interés a mensual
+    C = P * (1 + interes_mes) ** n # con la formula de interes compuesto se calcula a que valor llegara el prestamo tras los n meses
+    return C
+
+if __name__ == "__main__":
+    Capita = float(input("Ingrese el monto inicial del prestamo: "))
+    int_anual = float(input("Ingrese la tasa de interes anual sin el simbolo porcentaje: "))
+    meses = int(input("Ingrese el número de meses que se llevará el prestamo: "))
+    valorFinal = interes_compuesto(Capita, int_anual, meses)
+    print("El valor final del préstamo después de ", meses ," meses es: ", valorFinal)
 ```
 5. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones usando una función para cada una:
 
