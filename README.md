@@ -44,8 +44,48 @@ if __name__=="__main__":
 * Cree dos funciones en python para calcular los valores antes establecidos, al ingresar por teclado r, a y b.
 * Revise como utilizar el valor de pi usando import math y math.pi
 
-3. Diseñe una función que calcule la cantidad de carne de aves en kilos si se tienen N gallinas, M gallos y K pollitos cada uno pesando 6 kilos, 7 kilos y 1 kilo respectivamente.
+```python 
+from math import pi
 
+def area_perimetro_vagon (r: float, a: float, b: float) -> float:
+    perimetro_ruedas = 2*(2*pi*r) #los dos circulos son iguales por lo que se multiplica por dos
+    perimetro_vagon = (2*a)+(2*b)
+    area_vagon = a*b
+    area_ruedas = 2*(pi*(r**2))
+    return area_ruedas, area_vagon, perimetro_ruedas, perimetro_vagon
+
+def ingreso_teclado(r: float, a: float, b: float) -> float:
+    #funcion para organizar los datos tras el ingreso por teclado en main
+    a_ruedas, a_vagon, p_ruedas, p_vagon = area_perimetro_vagon(r, a, b)#se llama a la funcion para calcular las areas y volumenes
+    aTotal = a_ruedas + a_vagon 
+    pTotal = p_ruedas + p_vagon
+    return aTotal, pTotal
+
+if __name__=="__main__":
+    radioR = float(input("Ingrese el radio de los circulos. "))
+    ancho = float(input("Ingrese el ancho del rectangulo. "))
+    altura = float(input("Ingrese la altura del rectangulo. "))
+    areaTotal, perimetroTotal = ingreso_teclado(radioR, ancho, altura)
+    print("El area total de la superficie es: ", areaTotal, "\nEl perimetro total de la superficie es: ", perimetroTotal)
+```
+
+3. Diseñe una función que calcule la cantidad de carne de aves en kilos si se tienen N gallinas, M gallos y K pollitos cada uno pesando 6 kilos, 7 kilos y 1 kilo respectivamente.
+```python
+def cantidad_de_carne (N, M, K):
+    kg_gallinas = N * 6
+    kg_gallos = M * 7 
+    kg_pollitos = K * 1 
+    return kg_gallinas, kg_gallos, kg_pollitos
+
+if __name__=="__main__":
+    nGallinas = int(input("Ingrese el número de gallinas que tiene: "))
+    nGallos = int(input("Ingrese el número de gallos que tiene: "))
+    nPollitos = int(input("Ingrese el número de pollitos que tiene: "))
+    carGallina, carGallo, carPollito = cantidad_de_carne (nGallinas, nGallos, nPollitos)
+    print ("Para un numero de ", nGallinas, " gallinas, hay una cantidad de carne de ", carGallina,"Kg")
+    print ("Para un numero de ", nGallos, " gallos, hay una cantidad de carne de ", carGallo,"Kg")
+    print ("Para un numero de ", nPollitos, " pollitos, hay una cantidad de carne de ", carPollito,"Kg")
+```
 4. Haga un programa que utilice una función para calcular el valor de un préstamo C usando interés compuesto del i por n meses.
 
 5. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones usando una función para cada una:
@@ -57,6 +97,6 @@ if __name__=="__main__":
 * La raíz cúbica del menor número
 Para el punto anterior incluir las funciones en un archivo independiente e importarlas para su uso.
 
-5. Consultar qué es y cómo funciona pip en python.
+6. Consultar qué es y cómo funciona pip en python.
 
-6. Hacer un listado de módulos populares para python que se puedan instalar com pip y consultar cómo instalarlos.
+7. Hacer un listado de módulos populares para python que se puedan instalar com pip y consultar cómo instalarlos.
