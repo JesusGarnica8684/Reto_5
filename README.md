@@ -114,6 +114,9 @@ Para el punto anterior incluir las funciones en un archivo independiente e impor
     ```pip install nombre-paquete```
 
 7. Hacer un listado de módulos populares para python que se puedan instalar con pip y consultar cómo instalarlos.
+
+Para su instalación en la línea de comandos de Python se ingresa el nombre del modulo que se desee en la siguiente sintaxis:
+    ```pip install nombre-paquete```
 * Matplotlib
 * TensorFlow
 * PyTorch
