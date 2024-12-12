@@ -104,10 +104,13 @@ Para el punto anterior incluir las funciones en un archivo independiente e impor
 
 6. Consultar qué es y cómo funciona pip en python.
 
-```pip``` es un sistema de gestión de paquetes para Python. Su nombre proviene de “Pip Installs Packages”. Con pip, se puede instalar, actualizar y desinstalar paquetes de Python de manera sencilla.
+    ```pip``` es un sistema de gestión de paquetes para Python. Su nombre proviene de “Pip Installs Packages”. Con pip, se puede instalar, actualizar y desinstalar paquetes de Python de manera sencilla.
 
-Los paquetes son colecciones de módulos y funciones que pueden ser distribuidos y utilizados por otros programadores.
+    Los paquetes son colecciones de módulos y funciones que pueden ser distribuidos y utilizados por otros programadores.
 
-A partir de la versión 3.4 de Python, ya está instalado de forma predeterminada.
+    A partir de la versión 3.4 de Python, ya está instalado de forma predeterminada.
+   Se interactua con ```pip``` en la línea de comandos, el cual permite instalar paquetes de software de Python fácilmente desde solo una orden.
+
+    ```pip install nombre-paquete```
 
 7. Hacer un listado de módulos populares para python que se puedan instalar con pip y consultar cómo instalarlos.
