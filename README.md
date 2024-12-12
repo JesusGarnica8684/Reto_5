@@ -92,17 +92,9 @@ if __name__=="__main__":
 5. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones usando una función para cada una:
 
 * El promedio
-```python
-```
 * La mediana
-```python
-```
 * El promedio multiplicativo (multilplica todos y luego calcula la raíz de la cantidad de operandos)
-```
-```
 * La potencia del mayor número elevado al menor número
-```python
-```
 * La raíz cúbica del menor número
 ```python
 ```
@@ -111,5 +103,11 @@ Para el punto anterior incluir las funciones en un archivo independiente e impor
 ```
 
 6. Consultar qué es y cómo funciona pip en python.
+
+```pip``` es un sistema de gestión de paquetes para Python. Su nombre proviene de “Pip Installs Packages”. Con pip, se puede instalar, actualizar y desinstalar paquetes de Python de manera sencilla.
+
+Los paquetes son colecciones de módulos y funciones que pueden ser distribuidos y utilizados por otros programadores.
+
+A partir de la versión 3.4 de Python, ya está instalado de forma predeterminada.
 
 7. Hacer un listado de módulos populares para python que se puedan instalar con pip y consultar cómo instalarlos.
